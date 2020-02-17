@@ -12,7 +12,7 @@ class EmailAddressParser
   def initialize(email_data)
     email_array = email_data.split(/[\s,]/)
     
-    email_aray.each do |email|
+    email_array.each do |email|
       EMAILS << email 
     end
   end
