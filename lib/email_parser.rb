@@ -9,6 +9,7 @@ class EmailAddressParser
   
  def initialize(email_data)
    
+   
   
   def parse(email_data)
     email_array = email_data.split(/[\s,]/)
