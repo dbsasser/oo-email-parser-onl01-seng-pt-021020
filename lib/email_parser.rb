@@ -5,18 +5,17 @@
 
 class EmailAddressParser
   
-  attr_accessor :email
+  attr_accessor :email_data
   
  def initialize(email_data)
+   @email_data = email_data
+  end
    
    
   
   def parse(email_data)
     email_array = email_data.split(/[\s,]/)
-    
-    email_array.each do |email|
-      EMAILS << email 
-    end
+    email_array.unique
   end
     
     
