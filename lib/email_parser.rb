@@ -10,5 +10,12 @@ class EmailAddressParser
   EMAILS = []
   
   def initialize(email_data)
+    email_array = email_data(/[/s,]/)
+    
+    email_aray.each do |email|
+      EMAILS << email 
+    end
+  end
+    
     
   end
